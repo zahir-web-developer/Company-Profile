@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="company.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+        </style>
+    <title>Company Profile</title>
+</head>
+<body class="body-service">
+
+    <header>
+        
+
+        <div class="nav">
+            <div class="logo">Fashahira</div>
+            <ul class="links">
+            <li><a href="company.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><span></span></li>
+            </ul>
+            <a href="#" class="act-btn">Get Started</a>
+            <div class="btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="drop">
+            <li><a href="company.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#" class="act-btn">Get Started</a></li>
+        </div>
+    </header>
+
+    
+
+    <section class="contact" id="contact">
+        <div class="contact-intro">
+            <h1>CONTACT US</h1>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius ad id fugit asperiores dolores, dolor autem dicta doloremque nostrum reprehenderit, natus dolore libero consequatur veniam. Iste rem amet expedita quidem!</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Jl. Rambutan Kp. Jaha, <br>Kota Bks, Jawa Barat, <br>17422</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+62 857-8636-7463</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>muhammadzahirassajjad@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required>
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required>
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required></textarea>
+                        <span>Type Your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+<div class="back-con">
+    <h2>Back To Home</h2>
+    <a href="company.html">GO TO HOME</a>
+</div>
+    
+
+    <footer class="foot-service">
+        <div class="con-5">
+            <small>Copyright &copy; 2024 - Muhammad Zahir As-Sajjad. All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.btn')
+        const toggleBtnIcon = document.querySelector('.btn i')
+        const dropDownMenu = document.querySelector('.drop')
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    <script src="company.js"></script>
+</body>
+</html>

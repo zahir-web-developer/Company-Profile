@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="company.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+        </style>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Company Profile</title>
+</head>
+<body class="body-service">
+
+    <header>
+        
+
+        <div class="nav">
+            <div class="logo">Fashahira</div>
+            <ul class="links">
+            <li><a href="company.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><span></span></li>
+            </ul>
+            <a href="#" class="act-btn">Get Started</a>
+            <div class="btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="drop">
+            <li><a href="company.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#" class="act-btn">Get Started</a></li>
+        </div>
+    </header>
+
+    <div class="map-item" data-aos="fade-right" data-aos-delay="30" data-aos-duration="1000">
+    <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.8577888689724!2d106.9537973755351!3d-6.282418693706466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698de02e879b85%3A0xc1c80694bc9fd1b3!2sPangkalan%20Frozen%20Food%20Jatiasih!5e0!3m2!1sid!2sid!4v1727792485527!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="gabung">
+    <div class="title-map">
+        <h1>MAP LOCATION</h1>
+    </div>
+    <div class="teks-map">
+        <p>Di sini kami memiliki toko offline yang siap melayani dari pagi sampai malam</p>
+    </div>
+    </div>
+    </div>
+
+    <div class="olshop">
+        <div class="img-shp" data-aos="fade-right" data-aos-delay="60" data-aos-duration="1000">
+            <img src="img/Screenshot 2024-10-03 202943.png" alt="">
+        </div>
+        <div class="teks-ser" data-aos="fade-down" data-aos-delay="60" data-aos-duration="1000">
+            <div class="title-ser">
+                <h2>ONLINE SHOP</h2>
+            </div>
+        <div class="teks-shp">
+            <p>Kami juga melayani melalui online shop seperti Shopee & Tokopedia</p>
+        </div>
+    </div>
+        <div class="img-tkp" data-aos="fade-left" data-aos-delay="60" data-aos-duration="1000">
+            <img src="img/Screenshot 2024-10-03 203008.png" alt="">
+        </div>
+    </div>
+
+    <div class="back-btn-ser" data-aos="fade-up" data-aos-delay="60" data-aos-duration="1000">
+        <h2>Back To Home</h2>
+        <a href="company.html">GO BACK</a>
+    </div>
+
+    
+
+    <footer class="foot-service">
+        <div class="con-5">
+            <small>Copyright &copy; 2024 - Muhammad Zahir As-Sajjad. All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.btn')
+        const toggleBtnIcon = document.querySelector('.btn i')
+        const dropDownMenu = document.querySelector('.drop')
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+    <script src="company.js"></script>
+</body>
+</html>

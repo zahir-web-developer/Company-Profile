@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="company.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+        </style>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Company Profile</title>
+</head>
+<body>
+
+    <header>
+        
+
+        <div class="nav">
+            <div class="logo">Fashahira</div>
+            <ul class="links">
+            <li><a href="company.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><span></span></li>
+            </ul>
+            <a href="#" class="act-btn">Get Started</a>
+            <div class="btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="drop">
+            <li><a href="company.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#" class="act-btn">Get Started</a></li>
+        </div>
+    </header>
+
+<div class="back-video">
+    <video autoplay loop muted plays-inline class="video">
+        <source src="img/Restaurant Ad Video Template (Editable).mp4" type="video/mp4">
+    </video>
+
+
+    <main>
+        <section id="hero">
+            <h1>FASHAHIRA GOOD FOOD</h1>
+        </section>
+    </main>
+
+    </div>
+
+    <div class="judul-home" data-aos="fade-down" data-aos-delay="60" data-aos-duration="1000">
+    <h1>HOME</h1>
+    </div>
+    <section class="about" data-aos="fade-right" data-aos-delay="90" data-aos-duration="1000">
+        
+        <div class="img-about">
+            <img src="img/img-pawon-ayu.jpg" alt="">
+        </div>
+        <div class="con-2">
+            <h3>ABOUT</h3>
+            <p>Di sini kami menyediakan berbagai macam makanan dan juga minuman frozen, mulai dari cemilan, minuman dingin, lauk-pauk, buah-buahan, selai-selaian dan lain sebagainya</p>
+        </div>
+        
+    </section>
+
+    <div class="move-btn" data-aos="fade-up" data-aos-delay="60" data-aos-duration="1000">
+       <h2>Click This For See More</h2>
+        <a href="about.html">GO TO ABOUT</a>
+    </div>
+
+    <div class="history" data-aos="fade-left" data-aos-delay="60" data-aos-duration="1000">
+        <div class="img-history">
+            <img src="img/img-toko.jpg" alt="">
+        </div>
+        <div class="teks-history">
+            <h2>HISTORY</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio laboriosam numquam dignissimos quod libero, enim assumenda beatae quasi quam omnis consequuntur exercitationem pariatur culpa illo ut sunt magni ad nostrum suscipit. Tenetur dicta neque est repellendus quia illum quidem doloremque fugiat provident sequi? Enim, molestiae?</p>
+        </div>
+    </div>
+
+    <section class="service" data-aos="fade-up" data-aos-delay="120" data-aos-duration="1000">
+        <div class="con-3">
+            <h3>SERVICE</h3>
+            <div class="box">
+                <div class="col-4">
+                    <div class="icon">
+                        <i class="fa-solid fa-mobile"></i>
+                         </div>
+                        <h4>MOBILE APP</h4>
+                </div>
+                <div class="col-4">
+                    <div class="icon">
+                        <i class="fa-solid fa-globe"></i>
+                         </div>
+                        <h4>WEB MARKETING</h4>
+                </div>
+                <div class="col-4">
+                    <div class="icon">
+                        <i class="fa-solid fa-edit"></i>
+                         </div>
+                        <h4>DESIGN</h4>
+                </div>
+                <div class="col-4">
+                    <div class="icon">
+                        <i class="fa-solid fa-chart-bar"></i>
+                         </div>
+                        <h4>DIGITAL MARKETING</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="move-btn-ser" data-aos="fade-up" data-aos-delay="60" data-aos-duration="1000">
+        <h2>Click This For See More</h2>
+        <a href="service.html">GO TO SERVICE</a>
+    </div>
+
+    <div class="contact-home" data-aos="fade-up" data-aos-delay="60" data-aos-duration="1000">
+        <h1>CONTACT US</h1>
+        <p>Jika kalian ingin berbicara lebih lanjut silahkan pergi ke menu contact</p>
+        <div class="move-btn-con">
+            <h2>Click This For See More</h2>
+            <a href="contact.html">GO TO CONTACT</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="con-5">
+            <small>Copyright &copy; 2024 - Muhammad Zahir As-Sajjad. All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.btn')
+        const toggleBtnIcon = document.querySelector('.btn i')
+        const dropDownMenu = document.querySelector('.drop')
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+    <script src="company.js"></script>
+</body>
+</html>
